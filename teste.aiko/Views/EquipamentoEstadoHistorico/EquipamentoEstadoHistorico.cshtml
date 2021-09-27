@@ -1,0 +1,67 @@
+﻿@section scripts {
+    <script type="text/javascript" src="~/js/crud_equipamento_estado_historico.js"></script>
+}
+
+<div class="container">
+
+    <div class="mb-3">
+        <div class="text-center pb-1">
+            <h6 class="display-6">Equipamento Estado Histórico </h6>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <button type="button" class="btn btn-primary mb-3" id="btn-abrir-modal-estado-historico" name="btn-abrir-modal-estado-historico"> Criar Estado Histórico</button>
+        <table class="table table-bordered table-hover table-sm" id="tblListaEquipamentoEstadoHistorico">
+            <thead class="thead-light">
+                <tr>
+                    <th>
+                        Equipamenento
+                    </th>
+                    <th>
+                        Estado
+                    </th>
+                    <th>
+                        Data
+                    </th>
+                    <th>
+                        Opções
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- .modal -->
+    <div class="modal fade" id="modal-criar-estado-historico" name="modal-criar-estado-historico">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title text-center">Criar histórico</h6>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <label for="cmbEquipamentoEstadoHistorico" class="form-label">Equipamento</label>
+                        <select class="form-select pb-0" id="cmbEquipamentoEstadoHistorico" name="cmbEquipamentoEstadoHistorico" asp-items="@(new SelectList(string.Empty, "id", "nome"))">
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="cmbEstadoHistorico" class="form-label">Estado</label>
+                        <select class="form-select pb-0" id="cmbEstadoHistorico" name="cmbEstadoHistorico" asp-items="@(new SelectList(string.Empty, "id", "name"))">
+                        </select>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="btn-criar-estado-historico" name="btn-criar-estado-historico">Salvar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Sair</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

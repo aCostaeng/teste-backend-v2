@@ -1,0 +1,60 @@
+﻿@section scripts {
+    <script src="~/js/crud_equipamento_modelo.js"></script>
+}
+
+<div class="container">
+
+    <div class="mb-3">
+        <div class="text-center pb-3">
+            <h6 class="display-6">CRUD - Equipamento</h6>
+        </div>
+    </div>
+
+    <div class="row">
+        <button type="button" class="btn btn-primary mb-3" id="btn-modal-modelo" name="btn-abrir-modal-modelo"> Criar Modelo</button>
+
+        <table class="table table-bordered table-hover table-sm" id="tblListaModelo">
+            <thead>
+                <tr>
+                    <th>
+                        Modelo
+                    </th>
+                    <th>
+                        Opção
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- .modal -->
+    <div class="modal fade" id="modal-criar-modelo">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title text-center">Criar modelo</h6>
+                </div>
+
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nomeModelo" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nomeModelo" placeholder="Nome" name="nomeModelo" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="btn-criar-modelo" name="btn-criar-modelo">Salvar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Sair</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+

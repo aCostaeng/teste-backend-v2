@@ -1,0 +1,68 @@
+﻿@section scripts {
+    <script type="text/javascript" src="~/js/crud_equipamentos1.js"></script>
+}
+
+<div class="container">
+
+    <div class="mb-3">
+        <div class="text-center pb-3">
+            <h6 class="display-6">CRUD - Equipamento</h6>
+        </div>
+    </div>
+
+    <div class="row">
+        <button type="button" class="btn btn-primary mb-3" id="btn-modal-equipamento" name="btn-abrir-modal-equipamento"> Criar Equipamento</button>
+
+        <table class="table table-bordered table-hover table-sm" id="tblListaEquipamentos">
+            <thead>
+                <tr>
+                    <th>
+                        Equipamento
+                    </th>
+                    <th>
+                        Modelo
+                    </th>
+                    <th>
+                        Opção
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- .modal -->
+    <div class="modal fade" id="modal-criar-equipamento">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title text-center">Criar equipamento</h6>
+                </div>
+
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nomeEquipamento" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nomeEquipamento" placeholder="Nome" name="nomeEquipamento" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cmbEquipamentoModelo" class="form-label">Modelo</label>
+                        <select class="form-select" id="cmbEquipamentoModelo" name="cmbEquipamentoModelo" asp-items="@(new SelectList(string.Empty, "id", "name"))" required>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="btn-criar-equipamento" name="btn-criar-equipamento">Salvar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Sair</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+

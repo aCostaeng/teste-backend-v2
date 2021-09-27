@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>teste.aiko</name>
+    </assembly>
+    <members>
+        <member name="T:teste.aiko.Controllers.EquipamentoEstadoHistoricoController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:teste.aiko.Controllers.EquipamentoModeloController.#ctor(teste.aiko.Repository.IEquipamentoModeloRepo)">
+            <summary>
+            
+            </summary>
+            <param name="equipamentoModeloRepo"></param>
+        </member>
+        <member name="T:teste.aiko.Utils.Mensagens">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:teste.aiko.Utils.Mensagens.MENSAGEM_STATUS_CODE_SUCESSO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:teste.aiko.Utils.Mensagens.MENSAGEM_STATUS_CODE_ERRO_SERVIDOR">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:teste.aiko.Utils.Mensagens.MENSAGEM_STATUS_CODE_ERRO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:teste.aiko.ViewModel.EquipamentoEstadoHistoricoOutput">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:teste.aiko.ViewModel.EquipamentoEstadoHistoricoOutput.#ctor(System.Guid,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="data"></param>
+            <param name="estado"></param>
+            <param name="equipamentoEstadoId"></param>
+        </member>
+        <member name="T:teste.aiko.ViewModel.EquipamentoEstadoInput">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:teste.aiko.ViewModel.EquipamentoEstadoInput.Nome">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:teste.aiko.ViewModel.EquipamentoEstadoInput.Cor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:teste.aiko.ViewModel.EquipamentoEstadoOutput">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:teste.aiko.ViewModel.EquipamentoEstadoOutput.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:teste.aiko.ViewModel.EquipamentoEstadoOutput.Nome">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:teste.aiko.ViewModel.EquipamentoEstadoOutput.Cor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:teste.aiko.ViewModel.EquipamentoEstadoOutput.#ctor(System.Guid,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="nome"></param>
+            <param name="cor"></param>
+        </member>
+        <member name="T:teste.aiko.ViewModel.EquipamentoModeloInput">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:teste.aiko.ViewModel.EquipamentoModeloInput.Nome">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:teste.aiko.ViewModel.EquipamentoModeloOutput">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:teste.aiko.ViewModel.EquipamentoModeloOutput.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:teste.aiko.ViewModel.EquipamentoModeloOutput.Nome">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:teste.aiko.ViewModel.EquipamentoPosicoesHistoricoOutput">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:teste.aiko.ViewModel.EquipamentoPosicoesHistoricoOutput.#ctor(System.Guid,System.Guid,System.String,System.String,System.Single,System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="idEquipamento"></param>
+            <param name="equipamento"></param>
+            <param name="data"></param>
+            <param name="lat"></param>
+            <param name="lon"></param>
+        </member>
+        <member name="T:teste.aiko.ViewModel.ErrorViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:teste.aiko.ViewModel.ErrorViewModel.RequestId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:teste.aiko.ViewModel.ErrorViewModel.ShowRequestId">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
